@@ -4,4 +4,4 @@ def foo(charact,filepath):
     return print (fk.count(charact))
 
 with open('test.txt','w') as myfile:
-    myfile.write("tomatoss")
+    myfile.write("tomatos")
