@@ -1,4 +1,4 @@
-from tkinter import *
+from tkinter import Tk,Button,Text,Entry,END,StringVar
 
 window = Tk()
 
