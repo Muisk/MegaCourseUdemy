@@ -16,7 +16,7 @@
 # `# pyup: ignore <https://pyup.io/docs/bot/filter/>`_ comment.
 #
 # - v. 2.2 and above fails.
-Django==2.1.8  # pyup: ignore
+Django==2.2.13  # pyup: ignore
 matplotlib==3.0.3; python_version <= '3.5'  # pyup: ignore
 matplotlib==3.2.2; python_version >= '3.6'  # pyup: ignore
 # - v 21.1.0 fails; earlier versions not tested.
