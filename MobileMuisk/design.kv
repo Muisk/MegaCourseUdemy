@@ -1,0 +1,29 @@
+#:kivy 1.0
+
+<CalculateScreen>:
+    GridLayout:
+        cols:1
+        padding: 30,30
+        spacing: 30,30
+        RelativeLayout:
+            Image:
+                source: 'AgrimensuraRD.png'
+        Label:
+            text:"Introduzca el valor medido"
+        TextInput:
+            id: cateto
+            hint_text:"Usar punto para el decimal"
+        Button:
+            text:"Calcular"
+            on_press:root.get_number(root.ids.cateto.text)
+        ScrollView:
+            Label:
+                id:result
+                text:""
+                text_size: self.width,None
+                size_hint_y: None
+                height: self.texture_size[1]
+
+<RootWidget>:
+    CalculateScreen:
+        name: "calculate_screen"

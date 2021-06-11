@@ -10,6 +10,9 @@ from datetime import datetime
 from pathlib import Path
 import random
 
+from kivy import Config
+Config.set('graphics', 'multisamples', '0')
+
 Builder.load_file('design.kv')
 
 class LoginScreen(Screen):
